@@ -49,3 +49,17 @@ tr:nth-child(even) {
   width: 90%;
   margin: 0 auto;
 }
+
+/* Color Theme Swatches in Hex */
+.Travel-1-hex { color: #51608C; }
+.Travel-2-hex { color: #8697A6; }
+.Travel-3-hex { color: #BFCDD9; }
+.Travel-4-hex { color: #BF8756; }
+.Travel-5-hex { color: #8C4F2B; }
+
+/* Color Theme Swatches in RGBA */
+.Travel-1-rgba { color: rgba(81, 96, 140, 1); }
+.Travel-2-rgba { color: rgba(134, 151, 165, 1); }
+.Travel-3-rgba { color: rgba(190, 204, 216, 1); }
+.Travel-4-rgba { color: rgba(191, 135, 86, 1); }
+.Travel-5-rgba { color: rgba(140, 78, 43, 1); }
