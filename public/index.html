@@ -8,25 +8,32 @@
   <link rel="shortcut icon" href="icons/new-icon-192x154.png" type="image/x-icon">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Righteous&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 
   <title>Budget Tracker</title>
 </head>
 <body>
   <div class="wrapper">
-    <img src="./img/logo.png" alt="Budget Tracker Logo">
+    <section class="nav-box">
+      <div>
+        <img class="logo" src="./img/logo.png" alt="Budget Tracker Logo">
 
-    <div class="total">
-      <div class="total">Balance<span id="total">0</span></div>
-    </div>
+        <div class="form">
+          <input type="text" id="t-name" placeholder="Name of transaction" />
+          <input type="number" min="0" id="t-amount" placeholder="Transaction amount" />
+          <button id="add-btn"><i class="fa fa-plus buttons"></i> Add Funds</button>
+          <button id="sub-btn"><i class="fa fa-minus"></i> Subtract Funds</button>
+          <p class="error"></p>
+        </div>
+      </div>
 
-    <div class="form">
-      <input type="text" id="t-name" placeholder="Name of transaction" />
-      <input type="number" min="0" id="t-amount" placeholder="Transaction amount" />
-      <button id="add-btn"><i class="fa fa-plus buttons"></i> Add Funds</button>
-      <button id="sub-btn"><i class="fa fa-minus"></i> Subtract Funds</button>
-      <p class="error"></p>
-    </div>
+      <div class="total-box">
+        <div class="balance">Balance</div>
+        <div class="total"><span id="total">0</span></div>
+      </div>
+    </section>
+
 
     <div class="transactions">
       <table>
