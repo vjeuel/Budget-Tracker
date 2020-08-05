@@ -1,6 +1,14 @@
 const FILES_TO_CACHE = [
-   "/", "./icons/new-icon-144x115.png", "./icons/new-icon-192x154.png",
-   "./icons/new-icon-512x410.png", "/index.html", "/index.js", "/styles.css"
+   "/",
+   "/icons/new-icon-144x115.png",
+   "/icons/new-icon-192x154.png",
+   "/icons/new-icon-512x410.png",
+   "/index.html",
+   "/index.js",
+   "/indexedDB.js",
+   "/manifest.webmanifest",
+   "/styles.css",
+   "https://cdn.jsdelivr.net/npm/chart.js@2.8.0"
 ];
 
 const CACHE_NAME = "static-cache-v2";
@@ -52,4 +60,9 @@ self.addEventListener("fetch", evt => {
       );
       return;
    }
+   evt.respondWith(
+      caches.match(evt.request).then(response => {
+         return response || fetch(evt.request);
+      })
+   );
 });

@@ -1,10 +1,14 @@
+html {
+  font-size: 10px;
+  background-color: #F2F2F2;
+
+}
+
 body {
-  font-size: 120%;
   font-family: Arial;
 }
 
 button, input {
-  font-size: 100%;
   font-family: Arial;
 }
 
@@ -13,7 +17,7 @@ table {
 }
 
 td, th {
-  border: 1px solid #dddddd;
+  border: 1px solid #BF7E45;
   text-align: left;
   padding: 8px;
 }
@@ -30,6 +34,7 @@ tr:nth-child(even) {
   margin: 0 auto;
   max-width: 825px;
   text-align: center;
+  border: red solid 2px !important;
 }
 
 .total {
@@ -51,15 +56,15 @@ tr:nth-child(even) {
 }
 
 /* Color Theme Swatches in Hex */
-.Travel-1-hex { color: #51608C; }
-.Travel-2-hex { color: #8697A6; }
-.Travel-3-hex { color: #BFCDD9; }
-.Travel-4-hex { color: #BF8756; }
-.Travel-5-hex { color: #8C4F2B; }
+hex { color: #858C74; }
+hex { color: #D3D9BF; }
+hex { color: #734002; }
+hex { color: #BF7E45; }
+hex { color: #F2F2F2; }
 
 /* Color Theme Swatches in RGBA */
-.Travel-1-rgba { color: rgba(81, 96, 140, 1); }
-.Travel-2-rgba { color: rgba(134, 151, 165, 1); }
-.Travel-3-rgba { color: rgba(190, 204, 216, 1); }
-.Travel-4-rgba { color: rgba(191, 135, 86, 1); }
-.Travel-5-rgba { color: rgba(140, 78, 43, 1); }
+rgba { color: rgba(132, 140, 116, 1); }
+rgba { color: rgba(211, 216, 190, 1); }
+rgba { color: rgba(114, 64, 2, 1); }
+rgba { color: rgba(191, 125, 68, 1); }
+rgba { color: rgba(242, 242, 242, 1); }
