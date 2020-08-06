@@ -3,12 +3,14 @@ const FILES_TO_CACHE = [
    "/icons/new-icon-144x115.png",
    "/icons/new-icon-192x154.png",
    "/icons/new-icon-512x410.png",
+   "/img/logo.png",
    "/index.html",
    "/index.js",
    "/indexedDB.js",
    "/manifest.webmanifest",
    "/styles.css",
-   "https://cdn.jsdelivr.net/npm/chart.js@2.8.0"
+   "https://cdn.jsdelivr.net/npm/chart.js@2.8.0",
+   "https://fonts.googleapis.com/css2?family=Antic+Slab&family=Righteous&display=swap"
 ];
 
 const CACHE_NAME = "static-cache-v2";
