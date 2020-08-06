@@ -3,7 +3,7 @@
 
 <p align="center">
   <a href="(https://protected-spire-02687.herokuapp.com/">
-    <img src="banner.png" height="100%">
+    <img src="./public/img/banner.png" height="100%">
   </a>
 </p>
 
