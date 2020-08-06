@@ -11,12 +11,27 @@ html {
   font-family: 'Antic Slab', serif;
   font-size: 10px;
   background-color: #F2F2F2;
+  background: repeating-linear-gradient(
+    -45deg,
+    #f2f2f2,
+    #f2f2f2,
+    rgba(211, 216, 190, 0.5) 3px,
+    #f2f2f2 5px);
+}
+
+.follow-me {
+  position:absolute;
+  bottom:10px;
+  right:10px;
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
 .wrapper {
   margin: 0 auto;
   max-width: 825px;
   text-align: center;
+  color: white; 
 }
 
 .nav-box {
@@ -39,6 +54,7 @@ html {
   font-family: 'Antic Slab', serif;
   text-align: center;
   font-size: 1.75rem;
+  color: #734002;
   min-width: 10rem;
   width: 80%;
   height: auto;
@@ -53,27 +69,41 @@ input::placeholder {
   font-family: 'Antic Slab', serif;
   font-size: 1.75rem;
   text-align: center;
+  color: #734002;
+  opacity: 0.5;
 }
 
 .form button {
   background-color: #D3D9BF;
+  color: #6D735F;
   min-width: 12rem; 
   width: 15rem;
   margin: 0.5rem;
   padding: 1rem;
   border-radius: 0.5rem;
-  border: none;
-  box-shadow: 0 0 5px #858C74;
+  border: 2px solid #6D735F;
+  box-shadow: 0 0 5px #6D735F;
+}
+
+.form button:hover {
+  background-color: #6D735F;
+  color: #D3D9BF;
+  box-shadow: 0 0 5px #6D735F;
+  border: 2px solid #D3D9BF;
+  transition: ease-in-out 0.5s;
 }
 
 .total-box {
   background-color: #734002;
+  background-size: cover;
   color: #F2F2F2;
   width: 20rem;
   height: 20rem;
   margin: 0 auto;
   align-self: center;
   border-radius: 50%;
+  box-shadow: 0 0 15px 5px #734002;
+  border: 0.5rem solid #BF7E45;
 }
 
 .balance {
@@ -93,20 +123,41 @@ input::placeholder {
 
 table {
   width: 100%;
+  padding: 1rem;
+}
+
+thead {
+  font-family: 'Righteous', cursive;
+  letter-spacing: 2px;
+  background-color: #6D735F;
+  color: #f2f2f2;
+}
+
+th {
+  text-align: center;
+}
+
+td {
+  text-align: left;
+  color: #6D735F;
 }
 
 td, th {
   font-size: 1.5rem;
   border: 1px dotted #734002;
-  text-align: left;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
+
 tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color: #D3D9BF;
+  
 }
 
 .error {
+  font-family: 'Righteous', cursive;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
   color: red;
 }
 
@@ -116,8 +167,8 @@ tr:nth-child(even) {
   max-height: 30rem;
   overflow: auto;
   width: 100%;
-  margin: 0 auto;
-  box-shadow: 0 0 5px #734002;
+  margin: 3rem auto;
+  box-shadow: 0 0 10px 5px #D3D9BF;
 }
 
 /* MEDIA QUERY -------------------------------- */
@@ -129,7 +180,7 @@ tr:nth-child(even) {
 }
 
 /* Color Theme Swatches in Hex */
-hex { color: #858C74; }
+hex { color: #6D735F; }
 hex { color: #D3D9BF; }
 hex { color: #734002; }
 hex { color: #BF7E45; }
