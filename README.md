@@ -1,8 +1,5 @@
-
-<h1 align="center"></h1>
-
 <p align="center">
-  <a href="(https://protected-spire-02687.herokuapp.com/">
+  <a href="https://protected-spire-02687.herokuapp.com/" target="_blank">
     <img src="./public/img/banner.png" height="100%">
   </a>
 </p>
